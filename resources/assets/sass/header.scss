@@ -1,0 +1,33 @@
+header {
+    position: relative;
+    padding-top: 21px;
+    .logo {
+        margin: 0 auto;
+        width: 85px;
+        margin-bottom: 21px;
+    }
+    .links {
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            li {
+                display: inline-block;
+            }
+        }
+        &.links-right ul {
+            min-width: 140px;
+            width: 14vw;
+            margin-right: 21px;
+            position: absolute;
+            right: 0;
+        }
+        &.links-center ul {
+            margin: 0 auto;
+            width: 300px;
+            padding: 21px 7px;
+            border-bottom: 1px solid #020202;
+        }
+    }
+}
