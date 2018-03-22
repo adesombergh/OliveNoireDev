@@ -14,6 +14,15 @@ header {
             justify-content: space-between;
             li {
                 display: inline-block;
+                a:hover span {
+                    color:#fff;
+                }
+                a:hover.more{
+                    color:blue;
+                }
+                a:hover.follow{
+                    color:red;
+                }
             }
         }
         &.links-right ul {
@@ -28,6 +37,14 @@ header {
             width: 300px;
             padding: 21px 7px;
             border-bottom: 1px solid #020202;
+        }
+    }
+    .dropdown-menu {
+        ul {
+            display: block;
+            li {
+                display: block;
+            }
         }
     }
 }

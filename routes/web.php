@@ -17,11 +17,28 @@ Route::get('/', function () {
 
 Route::get('/news', function () {
     return view('news');
-});
+})->name('news');
 
 Route::get('/artists', function () {
     return view('artists');
-});
+})->name('artists');
+
+Route::get('/artist', function () {
+    return view('artist');
+})->name('artist');
+
+Route::get('/more', function () {
+    return view('more');
+})->name('more');
+
+Route::get('/releases', function () {
+    return view('releases');
+})->name('releases');
+
+Route::get('/release', function () {
+    return view('release');
+})->name('release');
+
 
 Auth::routes();
 

@@ -1,11 +1,16 @@
 @import "variables";
 @import "~bulma";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #020202;
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
   line-height: $line-height-base;
+  box-sizing: border-box;
 }
 
 a {
@@ -35,3 +40,7 @@ footer {
 @import 'header';
 @import 'news';
 @import 'artists';
+@import 'artist';
+@import 'releases';
+@import 'release';
+@import 'more';
