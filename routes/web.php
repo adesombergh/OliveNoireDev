@@ -12,10 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/news', function () {
     return view('news');
 })->name('news');
 
@@ -38,7 +34,6 @@ Route::get('/releases', function () {
 Route::get('/release', function () {
     return view('release');
 })->name('release');
-
 
 Auth::routes();
 
