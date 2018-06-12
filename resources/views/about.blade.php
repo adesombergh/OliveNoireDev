@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <div class="more">
+    <div class="about">
         <div class="columns is-multiline">
             <div class="column is-3">
                 <h2>OLIVE NOIRE</h2>

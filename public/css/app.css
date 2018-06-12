@@ -1,4 +1,4 @@
-/*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
+@import url(https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,800|Roboto:200,300,400,700);/*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 
 @-webkit-keyframes spinAround {
   from {
@@ -11514,8 +11514,9 @@ label.panel-block:hover {
 
 body {
   color: #020202;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
+  font-weight: 200;
   line-height: 1.6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11549,6 +11550,8 @@ footer p {
 }
 
 header {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 400;
   position: relative;
   padding-top: 21px;
 }
@@ -11578,7 +11581,7 @@ header .links ul li a:hover span {
   color: #fff;
 }
 
-header .links ul li a:hover.more {
+header .links ul li a:hover.about {
   color: blue;
 }
 
@@ -11586,9 +11589,18 @@ header .links ul li a:hover.follow {
   color: red;
 }
 
-header .links.links-right ul {
-  min-width: 140px;
-  width: 14vw;
+header .links ul li a:hover.shop {
+  color: green;
+}
+
+header .links.links-left > ul {
+  margin-left: 21px;
+  position: absolute;
+  left: 0;
+}
+
+header .links.links-right > ul {
+  width: 130px;
   margin-right: 21px;
   position: absolute;
   right: 0;
@@ -11607,10 +11619,10 @@ header .dropdown-menu ul {
 
 header .dropdown-menu ul li {
   display: block;
+  text-align: right;
 }
 
 .news {
-  font-family: "Myriad Pro";
   width: 66%;
   margin: 0 auto;
   display: grid;
@@ -11640,8 +11652,9 @@ header .dropdown-menu ul li {
 }
 
 .news .item figure figcaption {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 400;
   padding: 21px 5%;
-  font-weight: bold;
   font-size: 2vw;
   line-height: 2vw;
 }
@@ -11654,6 +11667,8 @@ header .dropdown-menu ul li {
 }
 
 .news .item figure figcaption p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   margin: 0;
   padding-top: 5%;
   font-size: 1vw;
@@ -11693,30 +11708,18 @@ header .dropdown-menu ul li {
   color: #fff;
 }
 
-.news .item:nth-child(4n+1):hover {
+.news .item:hover {
+  background-color: #000;
+}
+
+.news .item:first-child:hover {
   background-color: #ff0000;
-}
-
-.news .item:nth-child(4n+2):hover {
-  background-color: #0000ff;
-}
-
-.news .item:nth-child(4n+3):hover {
-  background-color: #39B54A;
-}
-
-.news .item:nth-child(4n):hover {
-  background-color: #FFFF00;
-}
-
-.news .item:nth-child(4n):hover a {
-  color: #000;
 }
 
 .artists a {
   display: inline-block;
-  font-weight: bold;
-  font-size: 5vw;
+  font-weight: 200;
+  font-size: 4vw;
 }
 
 .artists a:hover {
@@ -11725,14 +11728,11 @@ header .dropdown-menu ul li {
 }
 
 .artist {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
 .artist .description p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: bold;
   line-height: 24px;
   margin-bottom: 24px;
 }
@@ -11784,20 +11784,20 @@ header .dropdown-menu ul li {
 }
 
 .artist .details h2 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
-  font-weight: bold;
   margin-bottom: 28px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 800;
 }
 
 .artist .details h3 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 42px;
   line-height: 42px;
-  font-weight: bold;
   color: #fff;
   background-color: #000;
   display: inline;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 800;
 }
 
 .artist .details .socials li {
@@ -11805,7 +11805,7 @@ header .dropdown-menu ul li {
 }
 
 .artist .details .socials li a {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .artist .details .shows {
@@ -11823,6 +11823,7 @@ header .dropdown-menu ul li {
 }
 
 .artist .details .booking a {
+  font-weight: 700;
   font-size: 21px;
   background-color: #000;
   color: #fff;
@@ -11849,10 +11850,12 @@ header .dropdown-menu ul li {
 }
 
 .artist .releases-artist h3 {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 800;
   text-align: center;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 42px;
   margin-bottom: 70px;
 }
@@ -11881,7 +11884,8 @@ header .dropdown-menu ul li {
 
 .releases a p {
   display: none;
-  font-weight: bold;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 800;
   font-size: 5vw;
   position: absolute;
   top: 0;
@@ -11889,6 +11893,11 @@ header .dropdown-menu ul li {
   bottom: 0;
   right: 0;
   padding: 3%;
+}
+
+.releases a p span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
 }
 
 .releases a .img {
@@ -11912,7 +11921,6 @@ header .dropdown-menu ul li {
 }
 
 .release {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
 }
 
@@ -11924,6 +11932,8 @@ header .dropdown-menu ul li {
 .release h2 {
   text-align: center;
   font-size: 4vw;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 800;
   margin: 140px auto;
 }
 
@@ -11946,7 +11956,8 @@ header .dropdown-menu ul li {
 }
 
 .release .buy h3 {
-  font-size: 5vw;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 4vw;
 }
 
 .release .buy ul {
@@ -11970,6 +11981,7 @@ header .dropdown-menu ul li {
 .release .big-button a {
   padding: 50px;
   font-size: 4vw;
+  font-weight: 700;
   border: 2px solid #000;
 }
 
@@ -11979,26 +11991,23 @@ header .dropdown-menu ul li {
   background-color: #000;
 }
 
-.more h2 {
+.about h2 {
   font-size: 49px;
   line-height: 49px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
-.more p {
-  font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+.about p {
   font-size: 21px;
 }
 
-.more .contacts {
+.about .contacts {
   margin: 70px auto;
   text-align: center;
 }
 
-.more .contacts li {
+.about .contacts li {
   font-size: 28px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 

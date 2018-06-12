@@ -17,10 +17,22 @@
 <body>
     <div id="app">
         <header>
+            <nav class="links links-left">
+                <ul>
+                    <li>
+                        <a href="#" class="shop">SHOP</a>
+                    </li>
+                </ul>
+            </nav>
+        
             <nav class="links links-right">
                 <ul>
                     <li>
-                        <div class="dropdown is-hoverable">
+                        <a href="{{ route('about') }}" class="about">ABOUT</a>
+                    </li>
+        
+                    <li>
+                        <div class="dropdown is-hoverable is-right">
                             <a class="follow" aria-haspopup="true" aria-controls="dropdown-follow">FOLLOW</a>
                             <div class="dropdown-menu" id="dropdown-follow" role="menu">
                                 <ul>
@@ -33,9 +45,6 @@
                                 </ul>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <a href="{{ route('more') }}" class="more">MORE</a>
                     </li>
                 </ul>
             </nav>

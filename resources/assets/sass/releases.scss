@@ -9,7 +9,8 @@
         line-height: 0;
         p {
             display: none;
-            font-weight: bold;
+            font-family: 'Encode Sans Semi Expanded', sans-serif;
+            font-weight: 800;            
             font-size: 5vw;
             position: absolute;
             top: 0;
@@ -17,6 +18,10 @@
             bottom: 0;
             right: 0;
             padding:3%;
+            span {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 200;
+            }
         }
         .img {
             position: absolute;

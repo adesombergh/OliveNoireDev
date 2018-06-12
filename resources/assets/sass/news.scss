@@ -1,5 +1,4 @@
 .news {
-    font-family: "Myriad Pro";
     width: 66%;
     @media screen and (max-width: $break-medium) {
         width:80%;
@@ -19,8 +18,9 @@
                 height: auto;
             }
             figcaption {
+                font-family: 'Encode Sans Semi Expanded', sans-serif;
+                font-weight: 400;            
                 padding: 21px 5%;
-                font-weight: bold;
                 font-size: 2vw;
                 line-height: 2vw;
                 @media screen and (max-width: $break-small) {
@@ -28,6 +28,8 @@
                     line-height: .7rem;
                 }
                 p {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;                
                     margin: 0;
                     padding-top: 5%;
                     font-size: 1vw;
@@ -60,20 +62,11 @@
         &:hover a {
             color: #fff;
         }
-        &:nth-child(4n+1):hover{
+        &:hover{
+            background-color: #000;
+        }
+        &:first-child:hover{
             background-color: $red;
-        }
-        &:nth-child(4n+2):hover{
-            background-color: $blue;
-        }
-        &:nth-child(4n+3):hover{
-            background-color: $green;
-        }
-        &:nth-child(4n):hover{
-            background-color: $yellow;
-            a {
-                color: #000;
-            }
         }
     }
 }

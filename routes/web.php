@@ -23,9 +23,9 @@ Route::get('/artist', function () {
     return view('artist');
 })->name('artist');
 
-Route::get('/more', function () {
-    return view('more');
-})->name('more');
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
 Route::get('/releases', function () {
     return view('releases');
